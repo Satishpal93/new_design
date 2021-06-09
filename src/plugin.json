@@ -1,0 +1,60 @@
+{
+  "type": "app",
+  "name": "Asset manager",
+  "id": "xformation-assetmanager-ui-plugin",
+  "info": {
+    "description": "Asset Manager",
+    "author": {
+      "name": "Synectiks",
+      "url": "https://xformation.com"
+    },
+    "keywords": ["cms", "panel"],
+    "version": "1.0",
+    "updated": "2018-10-12",
+    "logos": {
+      "small": "img/asset_logo.svg",
+      "large": "img/asset_logo.svg"
+    }
+  },
+  "includes": [
+    {
+      "type": "page",
+      "name": "Environments",
+      "addToNav": false,
+      "defaultNav": false,
+      "component": "Environments"
+    },
+    {
+      "type": "page",
+      "name": "AmazonServices",
+      "addToNav": false,
+      "defaultNav": false,
+      "component": "AmazonServices"
+    },
+    {
+      "type": "page",
+      "name": "Kubernetes",
+      "addToNav": false,
+      "defaultNav": false,
+      "component": "Kubernetes"
+    },
+    {
+      "type": "page",
+      "name": "StorageDetails",
+      "addToNav": false,
+      "defaultNav": false,
+      "component": "StorageDetails"
+    },
+    {
+      "type": "page",
+      "name": "AccountSetup",
+      "addToNav": false,
+      "defaultNav": false,
+      "component": "AccountSetup"
+    }
+  ],
+  "dependencies": {
+    "grafanaVersion": "3.x 4.x 5.x",
+    "plugins": []
+  }
+}
