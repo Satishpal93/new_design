@@ -1006,7 +1006,7 @@ a:focus, a:hover {
   .service-container .displayed-here p {
     display: inline-block;
     margin: 0;
-    padding: 150px 0;
+    padding: 100px 0;
     color: #3B4859;
     font-size: 20px;
     line-height: 24px;
@@ -1179,6 +1179,42 @@ a:focus, a:hover {
           font-size: 14px;
           line-height: 24px;
           font-weight: 500; }
+  .service-account-container .webservice-container .webservice-tabs-container .tabs {
+    background-color: #D9E4F2;
+    text-align: center;
+    margin: 0;
+    overflow: hidden; }
+    .service-account-container .webservice-container .webservice-tabs-container .tabs ul {
+      display: flex;
+      padding-left: 2px;
+      padding-right: 2px;
+      padding-top: 2px;
+      padding-bottom: 1px;
+      justify-content: flex-start; }
+      .service-account-container .webservice-container .webservice-tabs-container .tabs ul li {
+        list-style: none;
+        display: contents; }
+        .service-account-container .webservice-container .webservice-tabs-container .tabs ul li a {
+          font-size: 12px;
+          line-height: 16px;
+          font-weight: 500;
+          color: #414D55;
+          color: unset;
+          padding: 10px 20px; }
+          .service-account-container .webservice-container .webservice-tabs-container .tabs ul li a:hover {
+            background-color: #FFFFFF;
+            color: #2662F0;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px; }
+        .service-account-container .webservice-container .webservice-tabs-container .tabs ul li.active a {
+          background-color: #FFFFFF;
+          color: #2662F0;
+          border-top-right-radius: 5px;
+          border-top-left-radius: 5px; }
+  .service-account-container .webservice-container .webservice-tabs-container .webservice-step-component {
+    display: block; }
+    .service-account-container .webservice-container .webservice-tabs-container .webservice-step-component.d-none {
+      display: none; }
 
 .service-account-container .account-box {
   padding: 10px 10px 10px 20px;
@@ -1257,6 +1293,51 @@ a:focus, a:hover {
   width: 100%;
   align-items: center;
   justify-content: center; }
+
+.service-account-container .performance-box {
+  width: 60%;
+  margin: 80px auto 40px auto; }
+  .service-account-container .performance-box .performance-inner {
+    background-color: #fafafa;
+    padding: 40px 30px;
+    text-align: center;
+    display: block;
+    box-shadow: 0px 3px 5px #00000029; }
+    .service-account-container .performance-box .performance-inner strong {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 20px; }
+    .service-account-container .performance-box .performance-inner p {
+      font-size: 14px;
+      line-height: 20px;
+      color: #000000;
+      font-weight: 500;
+      font-style: italic;
+      display: block;
+      margin-bottom: 30px; }
+    .service-account-container .performance-box .performance-inner .asset-blue-button {
+      border-radius: 0px; }
+
+.service-account-container .note-text {
+  margin: 0 auto 40px;
+  width: 75%; }
+  .service-account-container .note-text .note-text-inner {
+    border: 1px solid #F90000;
+    padding: 20px 30px;
+    width: 100%;
+    display: block; }
+    .service-account-container .note-text .note-text-inner p {
+      font-size: 14px;
+      line-height: 20px;
+      color: #FF0000;
+      font-weight: 500;
+      font-style: italic;
+      display: block;
+      margin-bottom: 0; }
+      .service-account-container .note-text .note-text-inner p strong {
+        font-weight: 600; }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .service-account-container .account-tabs ul li a {
@@ -1343,7 +1424,8 @@ a:focus, a:hover {
       margin: 20px 0 0 0; }
       .accountsetup-page-container .account-setup-container .account-setup-tab-contents .collapse-contents ul li {
         display: block;
-        padding-bottom: 5px; }
+        padding-bottom: 5px;
+        cursor: pointer; }
         .accountsetup-page-container .account-setup-container .account-setup-tab-contents .collapse-contents ul li .caret-right {
           display: inline-block;
           vertical-align: middle;
@@ -1369,6 +1451,8 @@ a:focus, a:hover {
         .accountsetup-page-container .account-setup-container .account-setup-tab-contents .collapse-contents ul li .show {
           padding-left: 30px;
           margin-top: 5px; }
+        .accountsetup-page-container .account-setup-container .account-setup-tab-contents .collapse-contents ul li .selected {
+          font-weight: bold; }
 
 .modal-container .collapse-contents {
   background-color: #ffffff;

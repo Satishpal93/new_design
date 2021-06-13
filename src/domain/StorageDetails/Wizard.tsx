@@ -52,8 +52,7 @@ export class Wizard extends React.Component<any, any>{
         const { currentStep } = this.state;
         const { steps } = this.props;
         return (
-            <div className="account-setup-container">
-                <div className="heading">New AWS Account Setup</div>
+            <>
                 <div className="wizard-step-line-container">
                     {this.createStepLine()}
                 </div>
@@ -66,7 +65,7 @@ export class Wizard extends React.Component<any, any>{
                         {currentStep >= steps.length - 1 && <button onClick={this.props.submitPage} className="blue-button m-r-0 m-b-0">Submit</button>}
                     </div>
                 </div>
-            </div>
+            </>
         );
     }
 }
